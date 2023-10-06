@@ -3,7 +3,7 @@
 return [
     'FriendlyName' => [
         'Type' => 'System',
-        'Value' => 'Kredi Karti - YapiKredi',
+        'Value' => 'Kredi Karti - YKB',
     ],
     'UsageNotes' => [
         'Type' => 'System',
