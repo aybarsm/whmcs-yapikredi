@@ -83,8 +83,8 @@ return [
         'FriendlyName' => 'Uye Isyeri Geri Yonlendirme Adresi',
         'Type' => 'text',
         'Size' => '50',
-        'Default' => (! empty($initUrl) ? "{$initUrl}/modules/gateways/callback/" . \WHMCS\Module\Gateway\YapiKredi\Posnet::getIdentifier() . '.php' : ''),
-        'Description' => 'Form yonlendirmesinin geri yapilacagi isyeri sayfa adresi </b>(Max 255 karakter)</b>' . (empty($initUrl) ? ' http(s)://WHMCS_ADRESI/modules/gateways/callback/' . \WHMCS\Module\Gateway\YapiKredi\Posnet::getIdentifier() . '.php' : ''),
+        'Default' => (! empty($initUrl) ? "{$initUrl}/modules/gateways/callback/" . \Aybarsm\Whmcs\Gateway\Yapikredi\Posnet::getIdentifier() . '.php' : ''),
+        'Description' => 'Form yonlendirmesinin geri yapilacagi isyeri sayfa adresi </b>(Max 255 karakter)</b>' . (empty($initUrl) ? ' http(s)://WHMCS_ADRESI/modules/gateways/callback/' . \Aybarsm\Whmcs\Gateway\Yapikredi\Posnet::getIdentifier() . '.php' : ''),
     ],
     'XID_PREFIX' => [
         'FriendlyName' => 'Tekil Islem On Eki',

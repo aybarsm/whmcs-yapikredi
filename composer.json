@@ -29,18 +29,9 @@
   },
   "require": {
     "php": ">=7.4",
-    "ext-simplexml": "*",
-    "ext-json": "*",
-    "aybarsm/whmcs-service": "^1.0",
-    "aybarsm/replacer-service": "^1.0"
+    "aybarsm/whmcs-gateway-yapikredi": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "@stable"
-  },
-  "post-install-cmd": [
-    "@php module install"
-  ],
-  "pre-update-cmd": [
-    "@git pull"
-  ]
+  }
 }

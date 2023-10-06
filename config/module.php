@@ -1,6 +1,6 @@
 <?php
 
-use WHMCS\Module\Gateway\YapiKredi\Posnet;
+use Aybarsm\Whmcs\Gateway\Yapikredi\Posnet;
 
 return [
     'replacer' => [
@@ -12,7 +12,7 @@ return [
             'replace' => '_',
         ],
         'modifier_class_map' => [
-            'Posnet' => \WHMCS\Module\Gateway\YapiKredi\Posnet::class,
+            'Posnet' => \Aybarsm\Whmcs\Gateway\Yapikredi\Posnet::class,
             'WhmcsService' => \Aybarsm\Whmcs\Service\Whmcs::class,
             'Str' => \Illuminate\Support\Str::class,
         ],
