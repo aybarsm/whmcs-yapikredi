@@ -1,4 +1,8 @@
 #!/usr/bin/env php
 <?php
 
+if (! file_exists(implode(DIRECTORY_SEPARATOR, [__DIR__, 'vendor', 'aybarsm', 'whmcs-gateway-yapikredi', 'module.php']))){
+    exit("Required vendor package not found! Run `composer install` command first.\n");
+}
+
 include implode(DIRECTORY_SEPARATOR, [__DIR__, 'vendor', 'aybarsm', 'whmcs-gateway-yapikredi', 'module.php']);
