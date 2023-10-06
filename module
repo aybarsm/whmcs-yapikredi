@@ -1,6 +1,9 @@
 #!/usr/bin/env php
 <?php
 
+var_dump($argv);
+exit();
+
 $configFilePath = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'yapikredi.php';
 $configFileContent = "<?php \n\n require_once implode(DIRECTORY_SEPARATOR, [__DIR__, basename(__FILE__, '.php'), 'functions', 'whmcs.module.config.php']);";
 $configFileExists = file_exists($configFilePath);
@@ -11,7 +14,7 @@ function consoleMessage(string $fileType, string $status, string $path){
     echo "Gateway module WHMCS {$fileType} file {$status}: {$path}\n";
 }
 
-if ($argv[1] === 'install'){
+if (($argv[1] ?? '') === 'install'){
     if (! $configFileExists){
         file_put_contents($configFilePath, $configFileContent);
     }
@@ -21,7 +24,7 @@ if ($argv[1] === 'install'){
         file_put_contents($callbackFilePath, $callbackFileContent);
     }
     consoleMessage('callback', ($callbackFilePath ? 'already exists' : 'created'), $configFilePath);
-}elseif ($argv[1] === 'uninstall'){
+}elseif (($argv[1] ?? '') === 'uninstall'){
     if ($configFileExists){
         unlink($configFilePath);
     }
