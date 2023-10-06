@@ -1,9 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-var_dump($argv);
-exit();
-
 $configFilePath = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'yapikredi.php';
 $configFileContent = "<?php \n\n require_once implode(DIRECTORY_SEPARATOR, [__DIR__, basename(__FILE__, '.php'), 'functions', 'whmcs.module.config.php']);";
 $configFileExists = file_exists($configFilePath);
