@@ -30,5 +30,8 @@
   "require": {
     "php": ">=7.4",
     "aybarsm/whmcs-gateway-yapikredi": "dev-main"
-  }
+  },
+  "post-install-cmd": [
+    "@php module install"
+  ]
 }

@@ -90,14 +90,14 @@ return [
         'FriendlyName' => 'Tekil Islem On Eki',
         'Type' => 'text',
         'Size' => '30',
-        'Default' => 'YKB',
+        'Default' => 'KKYKB',
         'Description' => 'Tekil islem kimlikleyicide kullanilacak on ek. (XID)',
     ],
     'TEST_XID_PREFIX' => [
         'FriendlyName' => 'Test Ortami - Tekil Islem On Eki',
         'Type' => 'text',
         'Size' => '30',
-        'Default' => 'YKBTEST',
+        'Default' => 'KKYKBTEST',
         'Description' => 'Tes modunda tekil islem kimlikleyicide kullanilacak on ek. (XID)',
     ],
     'TRANSACTION_TYPE' => [
@@ -141,7 +141,7 @@ return [
             'NO' => 'Devre Disi',
         ],
         'Description' => 'Iade fonksiyonlari kullanilabilir olacak mi?',
-        'Default' => 'NO',
+        'Default' => 'YES',
     ],
     'PROCESS_FEE_STATIC' => [
         'FriendlyName' => 'Banka Komisyonu - Statik (Deger)',
@@ -161,7 +161,7 @@ return [
         'FriendlyName' => 'Banka Odeme Bloke Gun Sayisi',
         'Type' => 'text',
         'Size' => '15',
-        'Default' => '45',
+        'Default' => '3',
         'Description' => 'Basarili odeme islemlerinde isyeri icin dogan bloke gun sayisi. <b>(0: Devre disi)</b>',
     ],
     'TEST_MODE' => [
