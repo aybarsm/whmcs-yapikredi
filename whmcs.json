@@ -1,0 +1,29 @@
+{
+    "schema": "1.0",
+    "type": "whmcs-gateways",
+    "name": "yapikredi",
+    "license": "MIT",
+    "category": "payments",
+    "description": {
+        "name": "Yapi Kredi Sanal Pos",
+        "tagline": "Yapi Kredi - Posnet Sanal Pos",
+        "features": [
+            "Provide structure for 3D secure authentication",
+            "Provide structure for 3D callback",
+            "Provide structure for full and partial refund"
+        ]
+    },
+    "support": {
+        "homepage": "https://github.com/aybarsm/whmcs-yapikredi",
+        "learn_more": "https://github.com/aybarsm/whmcs-yapikredi",
+        "support_url": "https://github.com/aybarsm/whmcs-yapikredi/issues",
+        "docs_url": "https://github.com/aybarsm/whmcs-yapikredi",
+        "email": "hello@aybarsm.com"
+    },
+    "authors": [
+        {
+            "name": "aybarsm",
+            "homepage": "https://github.com/aybarsm"
+        }
+    ]
+}

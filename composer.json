@@ -1,0 +1,43 @@
+{
+  "name": "aybarsm/whmcs-yapikredi",
+  "description": "Yapi Kredi (POSNET) - WHMCS Sanal Pos Modulu",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "aybarsm",
+    "whmcs",
+    "payment-gateway",
+    "yapikredi",
+    "ykb",
+    "posnet",
+    "sanal pos",
+    "sanal pos modulu"
+  ],
+  "homepage": "https://github.com/aybarsm",
+  "authors": [
+    {
+      "name": "Murat Aybars",
+      "email": "hello@aybarsm.com",
+      "homepage": "https://github.com/aybarsm/whmcs-yapikredi",
+      "role": "author"
+    }
+  ],
+  "support": {
+    "email": "hello@aybarsm.com",
+    "forum": "https://github.com/aybarsm/whmcs-yapikredi/discussions",
+    "wiki": "https://github.com/aybarsm/whmcs-yapikredi/wiki"
+  },
+  "require": {
+    "php": ">=7.4",
+    "ext-simplexml": "*",
+    "ext-json": "*",
+    "aybarsm/whmcs-service": "^1.0",
+    "aybarsm/replacer-service": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable"
+  },
+  "post-install-cmd": [
+    "@php artisan key:generate --ansi"
+  ]
+}
