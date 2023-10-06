@@ -25,5 +25,8 @@
             "name": "aybarsm",
             "homepage": "https://github.com/aybarsm"
         }
-    ]
+    ],
+    "logo": {
+        "filename": "logo.png"
+    }
 }
