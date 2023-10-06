@@ -205,4 +205,15 @@ return [
         'Default' => 'Aybarsm WHMCS-YapiKredi/2023; (' . PHP_OS . ')',
         'Description' => 'XML servisine gonderilen HTTP isteklerinde gozukecek agent bilgisi',
     ],
+    'DEBUG_FULL' => [
+        'FriendlyName' => 'Tam Hata Yakalama Modu',
+        'Size' => '10',
+        'Type' => 'dropdown',
+        'Options' => [
+            'YES' => 'Aktif',
+            'NO' => 'Devre Disi',
+        ],
+        'Description' => 'Aktif edilmesi halinde gateway log icerisinde <b>hassas</b> verilere de yer verilecektir. <b>Veritabaninda sifrelenmemis hassas veri tutma riskine karsi kullanildiktan hata ayiklama sonrasinda gateway logun temizlenmesi onerilir!</b>',
+        'Default' => 'NO',
+    ],
 ];
