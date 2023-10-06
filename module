@@ -25,12 +25,12 @@ if (($argv[1] ?? '') === 'install'){
     if ($configFileExists){
         unlink($configFilePath);
     }
-    consoleMessage('config', ($configFileExists ? 'does not exist' : 'deleted'), $configFilePath);
+    consoleMessage('config', ($configFileExists ? 'deleted' : 'does not exist'), $configFilePath);
 
     if ($callbackFileExists){
         unlink($callbackFilePath);
     }
-    consoleMessage('callback', ($callbackFilePath ? 'does not exist' : 'deleted'), $configFilePath);
+    consoleMessage('callback', ($callbackFilePath ? 'deleted' : 'does not exist'), $configFilePath);
 }else {
     echo "Argument not found!\n";
 }
