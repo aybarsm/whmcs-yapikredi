@@ -38,6 +38,9 @@
     "phpunit/phpunit": "@stable"
   },
   "post-install-cmd": [
-    "@php artisan key:generate --ansi"
+    "@php module install"
+  ],
+  "pre-update-cmd": [
+    "@git pull"
   ]
 }

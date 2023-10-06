@@ -1,0 +1,37 @@
+#!/usr/bin/env php
+<?php
+
+$configFilePath = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'yapikredi.php';
+$configFileContent = "<?php \n\n require_once implode(DIRECTORY_SEPARATOR, [__DIR__, basename(__FILE__, '.php'), 'functions', 'whmcs.module.config.php']);";
+$configFileExists = file_exists($configFilePath);
+$callbackFilePath = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'callback' . DIRECTORY_SEPARATOR . 'yapikredi.php';
+$callbackFileContent = "<?php \n\n require_once implode(DIRECTORY_SEPARATOR, [dirname(\$_SERVER['SCRIPT_FILENAME'],2), basename(__FILE__, '.php'), 'functions', 'whmcs.module.callback.php']);";
+$callbackFileExists = file_exists($callbackFilePath);
+function consoleMessage(string $fileType, string $status, string $path){
+    echo "Gateway module WHMCS {$fileType} file {$status}: {$path}\n";
+}
+
+if ($argv[1] === 'install'){
+    if (! $configFileExists){
+        file_put_contents($configFilePath, $configFileContent);
+    }
+    consoleMessage('config', ($configFileExists ? 'already exists' : 'created'), $configFilePath);
+
+    if (! $callbackFileExists){
+        file_put_contents($callbackFilePath, $callbackFileContent);
+    }
+    consoleMessage('callback', ($callbackFilePath ? 'already exists' : 'created'), $configFilePath);
+}elseif ($argv[1] === 'uninstall'){
+    if ($configFileExists){
+        unlink($configFilePath);
+    }
+    consoleMessage('config', ($configFileExists ? 'does not exist' : 'deleted'), $configFilePath);
+
+    if ($callbackFileExists){
+        unlink($callbackFilePath);
+    }
+    consoleMessage('callback', ($callbackFilePath ? 'does not exist' : 'deleted'), $configFilePath);
+}else {
+    echo "Argument not found!\n";
+}
+
