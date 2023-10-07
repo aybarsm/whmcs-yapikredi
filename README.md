@@ -1,3 +1,7 @@
+<table>
+   <tr><td><h3>Bu modül Alastyr Telekomünikasyon A.Ş. (<a href="https://alastyr.com" target="_blank">https://alastyr.com</a>) için özel geliştirilmiş, açık kaynak yazılımı desteklemek amacıyla MIT lisansı ile yayınlanmıştır.</h3></tr></td>
+</table>
+
 ## Ne Yapar
 Bu WHMCS ödeme geçidi modülü, Yapı Kredi Bankası Posnet Sanal Pos sistemi ile entegre çalışmak üzere tasarlanmıştır. Modül, işte neler sağladığına dair genel bir bakış:
 
@@ -56,19 +60,25 @@ Bu WHMCS ödeme geçidi modülü, Yapı Kredi Bankası Posnet Sanal Pos sistemi 
 - **Ölçeklenebilir Mimari:** Ölçeklenebilirlik gözetilerek inşa edilen bu modül, işletmeniz büyüdükçe artan işlem hacmini ve ek özelleştirme gereksinimlerini karşılayabilir.
 
 ## Başlamak İçin
-Ana WHMCS kurulum dizininizde, modüller dizininize depoyu klonlamak için aşağıdaki komutu çalıştırın.
+**Ana WHMCS kurulum dizininizde, modüller dizininize depoyu klonlamak için aşağıdaki komutu çalıştırın.**
 ```bash
 git clone https://github.com/aybarsm/whmcs-yapikredi.git modules/gateways/yapikredi
 ```
-Modül dizinine girin ve gerekli paketleri yüklemek için composer'i başlatın.
+**Modül dizinine girin ve gerekli paketleri yüklemek için composer'i başlatın.**
 ```bash
 cd modules/gateways/yapikredi
 composer install
 ```
-WHMCS keşfi için gerekli dosyaları oluşturmak üzere aşağıdaki komutu çalıştırabilir veya modules/gateways dizinindeki her iki dosyayı da WHMCS kurulumunuzdaki aynı konumlara kopyalayabilirsiniz.
+**WHMCS keşfi için gerekli dosyaları oluşturmak üzere aşağıdaki komutu çalıştırabilir veya modules/gateways dizinindeki her iki dosyayı da WHMCS kurulumunuzdaki aynı konumlara kopyalayabilirsiniz.**
 ```bash
 php module install
 ```
+**WHMCS Apps&Integrations ayarlarinizda Payments alanında modülü aktif hale getirebilirsiniz.**
+[![WHMCS Yapı Kredi Apps and Integrations](https://i.postimg.cc/mgqXZMcB/whmcs-yapikredi-activation.png)](https://postimg.cc/LJtBNJBb)
+[![WHMCS Yapı Kredi Activate](https://i.postimg.cc/N0q6Px99/whmcs-yapikredi-activate.png)](https://postimg.cc/sMmGM7Js)
+
+**Son olarak modül ayarlarını gerçekleştirebilirsiniz.**
+[![WHMCS Yapı Kredi Configuration](https://i.postimg.cc/VNf66S2Z/whmcs-yapikredi-config.png)](https://postimg.cc/DSNFpzv1)
 
 ## Uyumluluk
 Bu modül minimum PHP 7.4 ve WHMCS 8.2.1 versiyonlarını gerektirmektedir. Tüm testler bu ortamda gerçekleştirilmiştir.

@@ -29,6 +29,6 @@
   },
   "require": {
     "php": ">=7.4",
-    "aybarsm/whmcs-gateway-yapikredi": "dev-main"
+    "aybarsm/whmcs-gateway-yapikredi": "^1.0"
   }
 }
