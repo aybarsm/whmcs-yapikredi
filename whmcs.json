@@ -8,9 +8,15 @@
         "name": "Yapi Kredi Sanal Pos",
         "tagline": "Yapi Kredi - Posnet Sanal Pos",
         "features": [
-            "Provide structure for 3D secure authentication",
-            "Provide structure for 3D callback",
-            "Provide structure for full and partial refund"
+            "Provides structure for two different payment types as authorisation or sale",
+            "Provides structure for 3D secure authentication",
+            "Provides structure for 3D callback",
+            "Provides structure for full and partial refund",
+            "Provides structure for payments in different currencies dynamically",
+            "Provides structure for transaction fee calculation for static and ratio fees",
+            "Provides structure for payment release date calculation",
+            "Provides structure for bank test environment",
+            "Provides structure for transaction information"
         ]
     },
     "support": {
