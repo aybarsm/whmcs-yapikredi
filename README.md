@@ -1,6 +1,4 @@
-<table>
-   <tr><td><h3>Bu modül Alastyr Telekomünikasyon A.Ş. (<a href="https://alastyr.com" target="_blank">https://alastyr.com</a>) için özel geliştirilmiş, açık kaynak yazılımı desteklemek amacıyla MIT lisansı ile yayınlanmıştır.</h3></tr></td>
-</table>
+<table><tr><td><h3>Bu modül Alastyr Telekomünikasyon A.Ş. (<a href="https://alastyr.com" target="_blank">https://alastyr.com</a>) için özel geliştirilmiş, açık kaynak yazılımı desteklemek amacıyla MIT lisansı ile yayınlanmıştır.</h3></td></tr></table>
 
 ## Ne Yapar
 Bu WHMCS ödeme geçidi modülü, Yapı Kredi Bankası Posnet Sanal Pos sistemi ile entegre çalışmak üzere tasarlanmıştır. Modül, işte neler sağladığına dair genel bir bakış:
