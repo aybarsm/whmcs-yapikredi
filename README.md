@@ -80,4 +80,4 @@ php module install
 [![WHMCS Yapı Kredi Configuration](https://i.postimg.cc/VNf66S2Z/whmcs-yapikredi-config.png)](https://postimg.cc/DSNFpzv1)
 
 ## Uyumluluk
-Bu modül minimum PHP 7.4 ve WHMCS 8.2.1 versiyonlarını gerektirmektedir. Tüm testler bu ortamda gerçekleştirilmiştir.
+Bu modül minimum PHP 7.4 ve WHMCS 8.2.1 versiyonlarını gerektirmektedir. Tüm testler bu ortamda gerçekleştirilmiştir. (v1.0.0)
